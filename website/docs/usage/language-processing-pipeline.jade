@@ -323,7 +323,7 @@ p
     |  #[code nlp] object itself as a list:
 
 +code.
-    nlp = spacy.load('en', disable['parser', 'tagger'])
+    nlp = spacy.load('en', disable=['parser', 'tagger'])
     nlp = English().from_disk('/model', disable=['tensorizer', 'ner'])
     doc = nlp(u"I don't want parsed", disable=['parser'])
 
